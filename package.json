@@ -4,6 +4,7 @@
     "private": true,
     "scripts": {
         "codeceptjs": "codeceptjs run --steps",
+        "codeceptjs:reporter": "codeceptjs run --steps --reporter mocha-multi",
         "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
         "codeceptjs:ui": "codecept-ui --app",
         "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
