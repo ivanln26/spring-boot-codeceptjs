@@ -11,11 +11,15 @@ exports.config = {
   tests: './*_test.js',
   output: './output',
   helpers: {
+    REST: {
+      endpoint: "http://localhost:8080",
+      onRequest: () => {},
+    },
     Playwright: {
       url: 'http://localhost',
       show: true,
       browser: 'firefox'
-    }
+    },
   },
   include: {
     I: './steps_file.js'
